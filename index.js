@@ -102,6 +102,10 @@ export function increment(count) {
  */
 export function getTaxicabDistance(from, to) {
   // TODO
+  const horizontalDistance = Math.abs(from.x - to.x);
+  const verticalDistance = Math.abs(from.y - to.y);
+
+  return horizontalDistance + verticalDistance;
 }
 
 /**
@@ -118,6 +122,13 @@ export function getTaxicabDistance(from, to) {
  */
 export function getHerbivores(animals) {
   // TODO
+  let result = [];
+  for (let i = 0; i < animals.length; i++) {
+    if (animals[i].isHerbivore === true) {
+      result.push(animals[i]);
+    }
+  }
+  return result;
 }
 
 /**
