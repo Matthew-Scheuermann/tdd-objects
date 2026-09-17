@@ -145,6 +145,13 @@ export function getHerbivores(animals) {
  */
 export function getCarnivoreNames(animals) {
   // TODO
+  let result = [];
+  for (let i = 0; i < animals.length; i++) {
+    if (animals[i].isCarnivore === true) {
+      result.push(animals[i].name);
+    }
+  }
+  return result;
 }
 
 /**
