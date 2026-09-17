@@ -53,6 +53,10 @@ export function sortStudents(studentA, studentB) {
  */
 export function makeFlag(color, icon) {
   // TODO
+  return {
+    color,
+    icon,
+  };
 }
 
 /**
@@ -69,6 +73,8 @@ export function makeFlag(color, icon) {
  */
 export function increment(count) {
   // TODO
+  count.value++;
+  return count;
 }
 
 /**
